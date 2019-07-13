@@ -1,26 +1,2 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-<h1>CREATE NEW ARTICLES</h1>
-
-<%= form_for @article do |f| %>
-  <p>
-    <%= f.label :title %><br/>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :description %><br/>
-    <%= f.text_area :description %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-
-
-<% end %>
-</body>
-</html>
+<h1 align="center">CREATE AN ARTICLES</h1>
+<%= render "form" %>
